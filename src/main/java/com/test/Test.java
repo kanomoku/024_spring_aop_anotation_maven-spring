@@ -54,6 +54,7 @@ public class Test {
 		Demo demo = ac.getBean("demo123",Demo.class);
 		try {
 			demo.demo1();
+			demo.demo2();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

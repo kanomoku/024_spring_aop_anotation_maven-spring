@@ -6,11 +6,25 @@ import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 @Component
 @Aspect
 public class MyAdvice{
+	
+	@Pointcut("execution(* com.test.Demo.demo2())")
+	private void mypoint2() {}
+	
+	@Before("mypoint2()")
+	public void mybefore2() {
+		System.out.println("前置2");
+	}
+	@After("mypoint2()")
+	public void myafter12() {
+		System.out.println("后置2");
+	}
+	
 	@Before("com.test.Demo.demo1())")
 	public void mybefore() {
 		System.out.println("前置");

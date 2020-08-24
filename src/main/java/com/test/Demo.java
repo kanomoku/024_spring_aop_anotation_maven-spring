@@ -9,6 +9,9 @@ public class Demo {
 	public void demo1() {
 		System.out.println("demo1");
 	}
+	public void demo2() {
+		System.out.println("demo2");
+	}
 	public void demo1(String name,int age) {
 		System.out.println("demo1"+name+age);
 	}
