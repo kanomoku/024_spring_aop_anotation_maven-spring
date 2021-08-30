@@ -44,7 +44,5 @@ public class MyAdvice{
 		Object proceed = p.proceed();
 		System.out.println("环绕后置");
 		return proceed;
-		
 	}
-
 }

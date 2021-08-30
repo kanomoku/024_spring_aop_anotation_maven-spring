@@ -15,7 +15,7 @@ http://www.springframework.org/schema/context/spring-context.xsd">
 	
 	<!-- true 使用cglib动态代理  -->
 	<!-- false 使用jdk动态代理 -->
-	<aop:aspectj-autoproxy proxy-target-class="true"></aop:aspectj-autoproxy>
+	<aop:aspectj-autoproxy proxy-target-class="false"></aop:aspectj-autoproxy>
 <!-- 	
 十一. JDK 动态代理
 1. 和cglib 动态代理对比
